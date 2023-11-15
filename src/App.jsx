@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import Hero from "./pages/Hero";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       header
-      hero
-      a propos de moi
-      Projets
-      competences
-      contact
+      <Hero/>
+      <Projects />
+      <Skills/>
+      <Contact />
     </>
   )
 }
