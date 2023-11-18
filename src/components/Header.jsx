@@ -1,13 +1,14 @@
 import React from 'react'
+import '../styles/components/header.sass'
 
 const Header = () => {
   return (
-    <header>
-        <nav>
-            logo
-            <ul>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Skills</a></li>
+    <header className='header'>
+        <nav className='header_nav'>
+            <a href="">HR</a>
+            <ul className='header_links'>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </nav>      
