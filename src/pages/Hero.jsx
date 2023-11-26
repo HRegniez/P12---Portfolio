@@ -1,14 +1,12 @@
 import React, {useState} from 'react'
 import {Octokit} from "octokit"
 import '../styles/pages/hero.sass'
-import HeroBackground from '../components/HeroBackground'
-
 
 const Hero = () => {
   const [data, setData] = useState(null)
   const loadData = async () => {
     const octokit = new Octokit({ 
-      auth: ``   
+      auth: import.meta.env.VITE_REACT_APP_TOKEN 
     });
     try {
       const response = await octokit.request('GET /user', {
@@ -36,15 +34,27 @@ const Hero = () => {
     <section className='hero'>
       
       <div className='hero_userName'>
-        <h2>{data.login}</h2>
+        {/* <h2>HR</h2> */}
       </div>
-      <div>
-        <p>Hello world! <br/> My name is <strong>{data.name}</strong>, <br/> I am a student</p> 
-        <h1>Web Developer</h1>
+      <div className='hero_intro'>
+        <p>Hello world !</p>
+        <p className='hero_name'>I am <strong>{data.name}</strong>,</p>
+        <p>I am a</p>
       </div>
       
-      <p>here is my bio: {data.bio}</p>
-      <HeroBackground/>
+        <h1 className='hero_title'>Web Developer</h1>
+      
+      <a href='https://github.com/HRegniez' target='_blanc' className='hero_github'>
+        <i className="fa-brands fa-github"></i>
+        <p>GitHub</p>
+      </a>
+
+      <i className="fa-brands logo fa-react hero_react"></i>
+      <i className="fa-brands logo fa-square-js hero_js"></i>
+      <i className="fa-brands logo fa-css3-alt hero_css"></i>
+      <i className="fa-brands logo fa-html5 hero_html"></i>
+      <i className="fa-brands logo fa-sass hero_sass"></i>
+
     </section>
   ):null;
 }

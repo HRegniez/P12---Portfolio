@@ -1,8 +1,171 @@
 @import '../settings'
 
-.experience
-    height: 100svh
-    background-color: $surface-200
-    padding: 4rem 2rem
+.profile
+    scroll-snap-align: start
+    padding-top: 6rem
+    &_wrapper
+        padding: 0 2rem 2rem
+        z-index: 10
     &_title
-        color: $surface-400
+        color: $primary-100
+    article
+        margin: 4rem 0
+    ul
+        margin: 2rem 0 2rem
+    li
+        margin: 2rem 0 0 
+    &_bio
+        margin: 1rem 0
+        p
+            margin: 1rem 0 2rem
+    &_services
+        li
+            background-color: $surface-200
+            padding: 0.5rem
+            display: flex
+            flex-direction: column
+            align-items: center
+            border-radius: 0.5rem
+            i
+                font-size: 3rem
+                margin: 1rem
+                color: $primary-600
+            h4
+                font-size: 1.2rem
+            p
+                font-size: 0.9rem
+                padding: 0.5rem
+                color: $primary-500
+                text-align: center
+                
+    &_background
+        background-color: $surface-300
+        border-radius: 1rem
+        padding: 1rem 1rem 0.1rem
+        h3
+            color: $surface-100
+        li
+            margin: 1rem 0
+            padding-top: 0.5rem
+            border-top: 2px solid $surface-200
+        span
+            color: $primary-100
+            font-weight: 900
+        h4
+            margin: 0.25rem 0
+            color: $surface-100
+        p
+            margin: 0.25rem
+            color: $primary-100
+    &_languages
+        li
+            display: flex
+            align-items: center
+            gap: 0.5rem
+            margin-top: 1rem
+        img
+            width: 4rem
+        &-icon 
+            
+            width: 5rem
+            height: 5rem
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 0.5rem
+    &_techs
+        ul
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-evenly
+            align-items: center
+            align-content: flex-start
+            gap: 1rem
+        img
+            width: 90%
+        li
+            display: inline
+            background-color: $surface-300
+            padding: 0.5rem
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            border-radius: 0.5rem
+            width: 8rem
+            height: 10rem
+        h4
+            font-size: 0.9rem
+            margin-top: 1rem
+            color: $surface-100
+        &-icon
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+
+            
+@media screen and (min-width: 500px)
+    .profile
+        &_bio
+            position: relative
+            height: 12rem
+            &-in
+                max-width: 75%
+            &-out
+                position: absolute
+                right: 0
+                bottom: 0
+                text-align: end
+                max-width: 60%
+        // &_techs
+        //     ul
+        //         grid-template-columns: repeat(4, 1fr)
+        &_languages
+            ul
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+@media screen and (min-width: 630px)
+    .profile
+        // &_techs
+        //     ul
+        //         grid-template-columns: repeat(5, 1fr)
+        &_languages
+            ul
+                display: grid
+                grid-template-columns: repeat(4, 1fr)
+            li
+                flex-direction: column
+
+@media screen and (min-width: 768px)
+    .profile
+        &_languages
+            ul
+                grid-template-columns: repeat(2, 1fr)
+        // &_techs
+        //     ul
+        //         grid-template-columns: repeat(6, 1fr)
+        &_services
+            ul
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 1rem
+            li
+                height: 11rem
+@media screen and (min-width: 1024px)
+    .profile
+        &_languages
+            ul
+                grid-template-columns: repeat(2, 1fr)
+        // &_techs
+        //     ul
+        //         grid-template-columns: repeat(8, 1fr)
+        &_services
+            ul
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 1rem
+
+

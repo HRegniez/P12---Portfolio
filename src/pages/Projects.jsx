@@ -7,7 +7,7 @@ const Projects = () => {
   const [userProjects, setUserProjects] = useState(null)
   const loadData = async () => {
     const octokit = new Octokit({ 
-      auth: ``   
+      auth: import.meta.env.VITE_REACT_APP_TOKEN   
     });
     try {
       const response = await octokit.request('GET /users/HRegniez/repos', {
@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <section id='projects' className='projects'>
       <h2 className='projects_title'>Projects</h2>
-      <div className='projects_contain'>
+      <div className='projects_contain flex-desktop'>
         {userProjects ? (
             userProjects.map((userProject) => (
               userProject.description ? (

@@ -9,7 +9,7 @@ function ProjectCard(props) {
     const loadData = async () => {
         if(userProject.name){
             const octokit = new Octokit({ 
-            auth: ``   
+                auth: import.meta.env.VITE_REACT_APP_TOKEN 
             });
             try {
                 const response = await octokit.request(`GET /repos/HRegniez/${userProject.name}/languages`, {
@@ -43,23 +43,22 @@ function ProjectCard(props) {
             <ProjectImg project={userProject.name}/>
         ): null}
         
-        <p>{userProject.description}</p>
-
-        <ul>
-            <h4>Languages</h4>
-            <div className='project-card_languages'>
-                {projectLanguages ? (
-                    Object.entries(projectLanguages).map(([language, bytes]) => (
-                        <li key={language}>
-                            <h5>{language}</h5>
-                        </li>
-                ))) : null}
-            </div>
-            
-        </ul>
+        <aside>
+            <p>{userProject.description}</p>
+            <ul>
+                <div className='project-card_languages'>
+                    {projectLanguages ? (
+                        Object.entries(projectLanguages).map(([language, bytes]) => (
+                            <li key={language}>
+                                <h5>{language}</h5>
+                            </li>
+                    ))) : null}
+                </div>
+            </ul>
+        </aside>
         <div className='project-card_links' >
-            <a className='project-card_links-site' href={userProject.homepage}>link to site</a>
-            <a className='project-card_links-git' href={userProject.html_url}>link to GitHub</a>
+            <a className='project-card_links-site' target='_blanc' href={userProject.homepage}>link to site</a>
+            <a className='project-card_links-git' target='_blanc' href={userProject.html_url}>link to GitHub</a>
         </div>
     </article>
   )

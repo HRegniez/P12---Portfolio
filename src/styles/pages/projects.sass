@@ -1,9 +1,25 @@
 @import '../settings'
 
 .projects
-    background-color: $surface-300
-    padding: 4rem 2rem
+    scroll-snap-align: start
+    background-color: $surface-200
+    border-radius: 1rem
+    margin: 2rem 1rem
+    padding: 2rem 2rem 2rem
+    &_title
+        color: $surface-mixed-500
+        margin-top: 2rem
     &_contain
         margin-top: 1rem
         display: grid
         gap: 2rem
+
+@media screen and (min-width: 768px)
+    .flex
+        &-desktop
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+
+@media screen and (min-width: 1024px)
+    .projects
+        margin: 4rem auto
