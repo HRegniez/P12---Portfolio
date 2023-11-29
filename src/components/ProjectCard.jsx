@@ -11,6 +11,7 @@ function ProjectCard(props) {
             const octokit = new Octokit({ 
                 auth: import.meta.env.VITE_REACT_APP_TOKEN 
             });
+
             try {
                 const response = await octokit.request(`GET /repos/HRegniez/${userProject.name}/languages`, {
                 username: 'HRegniez',
@@ -48,9 +49,9 @@ function ProjectCard(props) {
             <ul>
                 <div className='project-card_languages'>
                     {projectLanguages ? (
-                        Object.entries(projectLanguages).map(([language, bytes]) => (
+                        userProject.topics.map((language) => (
                             <li key={language}>
-                                <h5>{language}</h5>
+                                <h4>{language}</h4>
                             </li>
                     ))) : null}
                 </div>
