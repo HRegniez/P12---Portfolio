@@ -15,7 +15,7 @@ function HeroBackground() {
         }
     }, [])
     const gradientEffect = {
-        background: `radial-gradient(circle at ${mousePos.x}px ${mousePos.y}px, #433D602B 0%, #433D6000 25%)`
+        background: `radial-gradient(circle at ${mousePos.x}px ${mousePos.y}px, #433D6052 0%, #433D6000 15%)`
     }
   return (
     <div className='background-dark' >
