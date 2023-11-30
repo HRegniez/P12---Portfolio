@@ -1,6 +1,22 @@
 @import '../settings.sass'
 @import 'animate.css'
 
+.text-animate
+    opacity: 0
+    animation: fadeIn 1s forwards
+    display: inline-block
+
+.text-animate-hover
+    animation-fill-mode: both
+    display: inline-block
+    &:hover
+        animation: rubberBand 0.5s
+        color: $primary-100
+
+@for $i from 1 through 40
+    .text-animate._#{$i}
+        animation-delay: #{$i / 10}s 
+
 .hero
     scroll-snap-align: start
     height: 100svh
@@ -27,9 +43,8 @@
     &_title
         font-size: 4rem
         letter-spacing: -0.1rem
-        opacity: 0%
-        animation: fadeIn 1s 1s forwards
-
+        opacity: 100%
+        animation: backInDown 1.5s 3.7s backwards
     &_userName
         position: absolute
         bottom: -50rem
@@ -50,6 +65,8 @@
         border-radius: 0.5rem
         display: flex
         gap: 0.5rem
+        opacity: 100%
+        animation: fadeIn 0.7s 4.5s backwards
         p
             font-size: 1rem
             color: $primary-700
@@ -66,26 +83,36 @@
         top: 65%
         left: 65%
         color: $surface-mixed-200
+        opacity: 100%
+        animation: bounceInUp 2s 4.9s backwards
     &_js
         font-size: 2rem
         top: 80%
         left: 40%
         color: $surface-mixed-200
+        opacity: 100%
+        animation: bounceInUp 3s 3.5s backwards
     &_sass
         font-size: 1.5rem
         top: 70%
         left: 15%
-        color: $surface-mixed-200        
+        color: $surface-mixed-200  
+        opacity: 100%
+        animation: bounceInUp 3s 3.7s backwards    
     &_css
         font-size: 1.5rem
         top: 25%
         left: 80%
         color: $surface-mixed-200
+        opacity: 100%
+        animation: bounceInUp 2.5s 4.5s backwards
     &_html
         font-size: 1.5rem
         top: 15%
         left: 60%
         color: $surface-mixed-200
+        opacity: 100%
+        animation: bounceInUp 2s 4.5s backwards
 
 
             
