@@ -15,7 +15,7 @@
 
 @for $i from 1 through 40
     .text-animate._#{$i}
-        animation-delay: #{$i / 10}s 
+        animation-delay: #{$i * 0.09}s 
 
 .hero
     scroll-snap-align: start
@@ -67,6 +67,37 @@
         gap: 0.5rem
         opacity: 100%
         animation: fadeIn 0.7s 4.5s backwards
+        p
+            font-size: 1rem
+            color: $primary-700
+        i
+            font-size: 1.5rem
+            vertical-align: middle
+            line-height: 19px
+            color: $primary-700
+
+    &_contact
+        position: absolute
+        bottom: 2rem
+        left: 2rem
+        animation: fadeIn 0.7s 4.5s backwards
+        z-index: 10
+        
+        &-btn 
+            padding: 0.5rem 1rem
+            background-color: $surface-200
+            border-radius: 0.5rem
+            display: flex
+            gap: 0.5rem
+            opacity: 100%
+        &-open 
+            padding: 0.5rem 1rem
+            background-color: $surface-mixed-100
+            border-radius: 0.5rem
+            display: flex
+            gap: 0.5rem
+            opacity: 100%
+
         p
             font-size: 1rem
             color: $primary-700

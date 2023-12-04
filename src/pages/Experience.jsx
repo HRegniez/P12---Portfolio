@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/pages/experience.sass'
+import '../styles/pages/experience.sass' 
 
 const Experience = () => {
   return (
@@ -19,11 +19,7 @@ const Experience = () => {
             <p>
               Passionate about logical challenges, seeking innovative projects to contribute skills.
             </p>
-          </aside>
-          
-        
-          
-          
+          </aside>         
          
         </article>
         <article className='profile_services'>

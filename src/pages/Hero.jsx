@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import '../styles/pages/hero.sass'
 import AnimateLetters from '../components/AnimateLetters'
+import HeroContact from '../components/HeroContact'
 
 
 const Hero = () => {
@@ -10,6 +11,7 @@ const Hero = () => {
 
   const handleScroll = () => {
     setScrollPos(window.scrollY)
+    console.log(scrollPos)
   }
   
   useEffect(() =>{
@@ -33,10 +35,7 @@ const Hero = () => {
 
   return (
     <section className='hero'>
-    
-      <div className='hero_userName'>
-        {/* <h2>HR</h2> */}
-      </div>
+
       <h1 className='hero_title'>
         Web Developer
       </h1>
@@ -66,6 +65,8 @@ const Hero = () => {
           <span className={`${letterClass} _34`}>.</span>
           </p>
       </div>
+
+      <HeroContact/>
             
       <a href='https://github.com/HRegniez' target='_blanc' className='hero_github'>
         <i className="fa-brands fa-github"></i>

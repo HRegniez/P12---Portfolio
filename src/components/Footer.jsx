@@ -1,12 +1,12 @@
 import React from 'react'
 import '../styles/components/footer.sass'
+import { ContactForm } from './ContactForm'
 
 const Footer = () => {
   return (
     <footer className='footer'>
       <section>
-        <h3>contact</h3>
-        <p>email: henriregniez124@gmail.com</p>
+        <ContactForm/>
         <p>GitHub: https://github.com/HRegniez</p>
       </section>
       <section>
