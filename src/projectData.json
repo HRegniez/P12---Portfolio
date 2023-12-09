@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "Print it",
+        "imgLink": "images/printIt.png",
+        "description": "this is the description of Print It.",
+        "siteLink": "https://hregniez.github.io/04---Print-it/Print-it-JS-main/",
+        "githubLink": "https://github.com/HRegniez/04---Print-it"
+    },
+    {
+        "id": 2,
+        "title": "Prit",
+        "imgLink": "images/printIt.png",
+        "description": "this iPrint It.",
+        "siteLink": "https://hregniez.github.io/04---Print-it/Print-it-JS-main/",
+        "githubLink": "https://github.com/HRegniez/04---Print-it"
+    }
+]

@@ -1,7 +1,23 @@
 import React from 'react'
 import '../styles/pages/experience.sass' 
 
+import iconHtml from "../assets/languageLogos/icons8-html-5.svg"
+import iconCss from "../assets/languageLogos/icons8-css3.svg"
+import iconJs from "../assets/languageLogos/icons8-javascript.svg"
+import iconReact from "../assets/languageLogos/icons8-réagir.svg"
+
+import iconVite from "../assets/languageLogos/icons8-vite.svg"
+import iconWebpack from '../assets/languageLogos/js_webpack-icon.svg'
+import iconSass from "../assets/languageLogos/icons8-avatar-sass.svg"
+import iconTailwind from '../assets/languageLogos/Tailwind_CSS_Logo.svg'
+import iconRedux from "../assets/languageLogos/redux.svg"
+import iconGit from '../assets/languageLogos/git-icon.svg'
+import iconGithub from "../assets/languageLogos/github-icon-1.svg"
+import iconSwagger from '../assets/languageLogos/swagger-seeklogo.com.svg'
+import iconThree from '../assets/languageLogos/THREEjs.svg'
+
 const Experience = () => {
+
   return (
     <section id='profile' className='profile_wrapper'>
       <div className='profile'>
@@ -20,6 +36,7 @@ const Experience = () => {
               Passionate about logical challenges, seeking innovative projects to contribute skills.
             </p>
           </aside>         
+          
          
         </article>
         <article className='profile_services'>
@@ -62,7 +79,7 @@ const Experience = () => {
             <ul>
               <li>
                 <div className='profile_languages-icon'>
-                  <img src="src/assets/languageLogos/icons8-html-5.svg" alt="" />
+                  <img src={iconHtml} alt="" />
                 </div>
                 <h4>
                   HTML
@@ -70,7 +87,7 @@ const Experience = () => {
               </li>
               <li>
                 <div className='profile_languages-icon'>
-                  <img src="src/assets/languageLogos/icons8-css3.svg" alt="" />
+                  <img src={iconCss} alt="" />
                 </div>
                 <h4>
                   CSS
@@ -78,7 +95,7 @@ const Experience = () => {
               </li>
               <li>
                 <div className='profile_languages-icon'>
-                  <img src="src/assets/languageLogos/icons8-javascript.svg" alt="" />
+                  <img src={iconJs} alt="" />
                 </div>
                 <h4>
                   JS
@@ -86,7 +103,7 @@ const Experience = () => {
               </li>
               <li>
                 <div className='profile_languages-icon'>
-                  <img src="src/assets/languageLogos/icons8-réagir.svg" alt="" />
+                  <img src={iconReact} alt="" />
                 </div>
                 <h4>
                   REACT
@@ -122,55 +139,55 @@ const Experience = () => {
           <ul>
             <li>
               <div className='profile_techs-icon'>
-                <img src="src/assets/languageLogos/icons8-vite.svg" alt="" />
+                <img src={iconVite} alt="" />
               </div>
               <h4>Vite</h4>
             </li>
             <li>
               <div className='profile_techs-icon'>
-                <img src="src/assets/languageLogos/js_webpack-icon.svg" alt="" />
+                <img src={iconWebpack} alt="" />
               </div>
               <h4>Webpack</h4>
             </li>
             <li>
               <div className='profile_techs-icon'>
-                <img src="src/assets/languageLogos/icons8-avatar-sass.svg" alt="" />
+                <img src={iconSass} alt="" />
               </div>
               <h4>SASS/SCSS</h4>
             </li>
             <li>
               <div className='profile_techs-icon'>
-                <img src="src/assets/languageLogos/Tailwind_CSS_Logo.svg" alt="" />
+                <img src={iconTailwind} alt="" />
               </div>
               <h4>Tailwind</h4>
             </li>
             <li>
               <div className='profile_techs-icon'>
-                <img src="src/assets/languageLogos/redux.svg" alt="" />
+                <img src={iconRedux} alt="" />
               </div>
               <h4>Redux</h4>
             </li>
             <li>
               <div className='profile_techs-icon'>
-                <img src="src/assets/languageLogos/git-icon.svg" alt="" />
+                <img src={iconGit} alt="" />
               </div>
               <h4>Git</h4>
             </li>
             <li>
               <div className='profile_techs-icon'>
-                <img src="src/assets/languageLogos/github-icon-1.svg" alt="" />
+                <img src={iconGithub} alt="" />
               </div>
               <h4>GitHub</h4>
             </li>
             <li>
               <div className='profile_techs-icon'>
-                <img src="src/assets/languageLogos/swagger-seeklogo.com.svg" alt="" />
+                <img src={iconSwagger} alt="" />
               </div>
               <h4>Swagger</h4>
             </li>
             <li>
               <div className='profile_techs-icon'>
-                <img src="src/assets/languageLogos/THREEjs.svg" alt="" />
+                <img src={iconThree} alt="" />
               </div>
               <h4>THREE js</h4>
             </li>
