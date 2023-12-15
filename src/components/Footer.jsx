@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
         </article>
         
-        <a className='footer_github' href='https://github.com/HRegniez'><i className="fa-brands fa-github"></i>   GitHub </a>
+        <a className='footer_github' target='_blanc' href='https://github.com/HRegniez'><i className="fa-brands fa-github"></i>   GitHub </a>
       </section>
     </footer>
   )
