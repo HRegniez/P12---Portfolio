@@ -7,16 +7,20 @@ const Footer = () => {
     <footer className='footer'>
       <section>
         <ContactForm/>
-        <p>GitHub: https://github.com/HRegniez</p>
+        
       </section>
       <section>
         <h3>About this site</h3>
-        <p>
-          This site was designed and hand-coded by myself using REACT.
-        </p>
-        <p>
-          Here is the code: https://github.com/HRegniez/P12---Portfolio
-        </p>
+        <article>
+          <p>
+            This site was designed and hand-coded by myself using REACT.
+          </p>
+          <p>
+            Here is the code: https://github.com/HRegniez/P12---Portfolio
+          </p>
+        </article>
+        
+        <a className='footer_github' href='https://github.com/HRegniez'><i className="fa-brands fa-github"></i>   GitHub </a>
       </section>
     </footer>
   )

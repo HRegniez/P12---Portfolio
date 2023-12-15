@@ -1,18 +1,39 @@
 [
+    
     {
         "id": 1,
-        "title": "Print it",
-        "imgLink": "images/printIt.png",
-        "description": "this is the description of Print It.",
-        "siteLink": "https://hregniez.github.io/04---Print-it/Print-it-JS-main/",
-        "githubLink": "https://github.com/HRegniez/04---Print-it"
+        "title": "Data-React",
+        "imgLink": "images/dataReact.png",
+        "description": "This website is the result of a free crash course to get better at React and Tailwind.",
+        "siteLink": "https://hregniez.github.io/data_react_tailwind/",
+        "githubLink": "https://github.com/HRegniez/data_react_tailwind",
+        "techs": ["REACT", "TAILWIND"]
     },
     {
         "id": 2,
-        "title": "Prit",
-        "imgLink": "images/printIt.png",
-        "description": "this iPrint It.",
+        "title": "Nina Carducci",
+        "imgLink": "images/ninaCarducci.png",
+        "description": "Artist's Website where te task was to improve loading time and it's SEO",
+        "siteLink": "https://hregniez.github.io/08_NinaCarducci/",
+        "githubLink": "https://github.com/HRegniez/08_NinaCarducci/",
+        "techs": ["HTML", "JS"]
+    },
+    {
+        "id": 3,
+        "title": "SunnySide",
+        "imgLink": "images/sunnySide.png",
+        "description": "This web page was a Frontend Mentor challenge.",
+        "siteLink": "https://hregniez.github.io/sunnyside-agency-landing-page-main/",
+        "githubLink": "https://github.com/HRegniez/sunnyside-agency-landing-page-main",
+        "techs": ["HTML", "JS", "SCSS"]
+    },
+    {
+        "id": 4,
+        "title": "Oh My Food",
+        "imgLink": "images/ohMyFood.png",
+        "description": "This project was coded to get better at animating websites.",
         "siteLink": "https://hregniez.github.io/04---Print-it/Print-it-JS-main/",
-        "githubLink": "https://github.com/HRegniez/04---Print-it"
+        "githubLink": "https://github.com/HRegniez/04---Print-it",
+        "techs": ["HTML", "SASS"]
     }
 ]

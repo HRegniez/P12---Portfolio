@@ -1,0 +1,138 @@
+@import '../settings'
+
+.projects
+    padding: 4rem 0rem 0rem
+    &_contain
+        background-color: $surface-300
+        width: 100%
+        padding: 1rem 1rem
+        h2
+            color: #CFCFCF
+    &_card
+        margin: 2rem 0 3rem
+        overflow: hidden
+        position: relative
+        border-radius: 1rem
+        height: 14rem
+        &-arrow 
+            color: $surface-500
+            font-size: 1.3rem
+            position: absolute
+            left: 50%
+            margin-top: 0.3rem  
+            transition: transform 0.3s
+            &.down
+                transform: rotate(180deg)
+                transition: transform 0.3s
+        &-contain 
+            position: relative
+        &-link
+            width: 100%
+            overflow: hidden
+        img
+            width: 100%      
+        &-description
+            padding: 0.5rem 30% 0.5rem 1rem
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            height: 100%
+            background-color: $surface-100 
+            transition: transform 0.4s ease-out
+            transform: translateY(5.5rem)
+            cursor: default
+            &.closed
+                transform: translateY(11.5rem)
+                transition: transform 0.2s ease-in
+            
+            h3
+                font-size: 1.2rem
+                margin-bottom: 0.5rem
+
+
+        &-techs 
+            position: absolute
+            top: -0.5rem
+            right: 1rem
+            
+            display: flex
+            gap: 0.5rem
+            span
+                background-color: $surface-600
+                padding: 0.15rem 0.3rem
+                color: $surface-100
+                font-size: 0.8rem
+                font-weight: 900
+                border-radius: 0.5rem
+                position: relative
+                overflow: auto
+
+
+        &-github
+            position:   absolute
+            bottom: -0.7rem
+            right: 0.5rem
+            background-color: $surface-600
+            padding: 0.3rem 0.5rem 0.3rem 1rem
+            border-radius: 0.5rem
+            border: 5px solid $surface-100
+            color: $surface-100
+            font-weight: 900
+            i
+                font-size: 1.4rem
+                position: absolute
+                top: 0
+                z-index: 10
+                left: -0.8rem
+                background-color: $surface-600
+                border-radius: 50%
+                padding: 0.2rem
+                color: $surface-100
+
+@media screen and (min-width: 600px)
+    .projects
+        &_card
+            height: 13rem
+            &-techs 
+                top: 1.3rem
+            &-github
+                bottom: 2.3rem
+            &-container 
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 2rem
+            &-description
+                transform: translateY(6rem) 
+                &.closed
+                    transform: translateY(10.5rem)
+@media screen and (min-width: 800px)
+    .projects
+        &_card
+            height: 16rem
+            &-techs 
+                top: 1.3rem
+            &-github
+                bottom: 2.3rem
+            &-container 
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 2rem
+            &-description 
+                transform: translateY(9rem)
+                &.closed
+                    transform: translateY(13.5rem)
+
+@media screen and (min-width: 1024px)
+    .projects
+        &_contain
+            border-radius: 1rem
+        &_card
+            height: 20rem
+            &-arrow 
+                display: none
+            &-description
+                transform: translateY(13rem)
+                &.closed
+                    transform: translateY(17.5rem)
+                

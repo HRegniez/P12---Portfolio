@@ -11,7 +11,6 @@ const Hero = () => {
 
   const handleScroll = () => {
     setScrollPos(window.scrollY)
-    console.log(scrollPos)
   }
   
   useEffect(() =>{
@@ -35,7 +34,7 @@ const Hero = () => {
 
   return (
     <section className='hero_wrapper'>
-      <section className='hero'>
+      <section id="home" className='hero'>
 
         <h1 className='hero_title' style={{ transform: `translateY(${scrollPos * 0.65}px)`, opacity:`${100 - (scrollPos * 0.18)}%`}}>
           Web Developer

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className='header'>
         <nav className='header_nav'>
-            <a href="">HR</a>
+            <a href="#home">HR</a>
             <ul className='header_links'>
                 <li><a href="#profile">Profile</a></li>
                 <li><a href="#projects">Projects</a></li>
