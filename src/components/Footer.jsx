@@ -15,9 +15,9 @@ const Footer = () => {
           <p>
             This site was designed and hand-coded by myself using REACT.
           </p>
-          <p>
-            Here is the code: https://github.com/HRegniez/P12---Portfolio
-          </p>
+          <a target='_blanc' href='https://github.com/HRegniez/P12---Portfolio'>
+            Link to code : https://github.com/HRegniez/P12---Portfolio
+          </a>
         </article>
         
         <a className='footer_github' target='_blanc' href='https://github.com/HRegniez'><i className="fa-brands fa-github"></i>   GitHub </a>
