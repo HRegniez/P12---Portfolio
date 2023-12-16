@@ -5,8 +5,8 @@ import '../styles/pages/projects.sass'
 
 function Projects() {
   return (
-    <div id='projects' className='projects'>
-      <section className='projects_contain'>
+    <section id='projects' className='projects'>
+      <div className='projects_contain'>
         <h2>Projects</h2>
         <div className='projects_card-container'>
           {projects.map((project) => (
@@ -22,8 +22,8 @@ function Projects() {
           ))}
         </div>
         
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 

@@ -79,6 +79,13 @@
             border: 5px solid $surface-100
             color: $surface-100
             font-weight: 900
+            transition: color 0.8s ease-in
+            &:hover 
+                color: $primary-100
+                transition: color 0.2s ease-in
+                i
+                    color: $primary-100
+                    transition: color 0.3s ease-out
             i
                 font-size: 1.4rem
                 position: absolute
@@ -89,6 +96,7 @@
                 border-radius: 50%
                 padding: 0.2rem
                 color: $surface-100
+                transition: color 0.7s ease-out
 
 @media screen and (min-width: 600px)
     .projects
