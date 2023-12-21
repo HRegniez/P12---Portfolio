@@ -2,6 +2,9 @@ import React, {useState, useEffect} from 'react'
 import '../styles/pages/hero.sass'
 import AnimateLetters from '../components/AnimateLetters'
 import HeroContact from '../components/HeroContact'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faReact, faJsSquare, faCss3Alt, faHtml5, faSass } from '@fortawesome/free-brands-svg-icons';
+
 
 
 const Hero = () => {
@@ -69,16 +72,14 @@ const Hero = () => {
           <HeroContact />
               
         <a href='https://github.com/HRegniez' target='_blanc' className='hero_github'>
-          <i className="fa-brands fa-github"></i>
+          <FontAwesomeIcon icon={faGithub} className='hero_github-icon'/>
           <p>GitHub</p>
         </a>
-
-        <i className="fa-brands logo _30 fa-react hero_react" style={{ transform: `translateY(${scrollPos * 0.3}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}}></i>
-        <i className="fa-brands logo _37 fa-square-js hero_js" style={{ transform: `translateY(${scrollPos * 0.2}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}}></i>
-        <i className="fa-brands logo _32 fa-css3-alt hero_css" style={{ transform: `translateY(${scrollPos * 0.75}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}}></i>
-        <i className="fa-brands logo _35 fa-html5 hero_html" style={{ transform: `translateY(${scrollPos * 0.9}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}}></i>
-        <i className="fa-brands logo _40 fa-sass hero_sass" style={{ transform: `translateY(${scrollPos * 0.25}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}}></i>
-
+        <FontAwesomeIcon icon={faReact} className='logo _30 hero_react' style={{ transform: `translateY(${scrollPos * 0.3}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}} />
+        <FontAwesomeIcon icon={faJsSquare} className='logo _37 hero_js' style={{ transform: `translateY(${scrollPos * 0.2}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}} />
+        <FontAwesomeIcon icon={faCss3Alt} className='logo _32 hero_css' style={{ transform: `translateY(${scrollPos * 0.75}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}} />
+        <FontAwesomeIcon icon={faHtml5} className='logo _35 hero_html' style={{ transform: `translateY(${scrollPos * 0.9}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}} />
+        <FontAwesomeIcon icon={faSass} className='logo _40 hero_sass'  style={{ transform: `translateY(${scrollPos * 0.25}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}} />
       </section>
     </section>
 

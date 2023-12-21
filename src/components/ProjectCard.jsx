@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import '../styles/pages/projects.sass'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function ProjectCard({id, title, imgLink, description, siteLink, githubLink, techs}) {
   const [descriptionToggle, setDescritpionToggle] = useState(false)
@@ -19,7 +21,8 @@ function ProjectCard({id, title, imgLink, description, siteLink, githubLink, tec
       </article> 
 
       <a className="projects_card-github" target="_blanc" href={githubLink}>
-        <i className="fa-brands fa-github"></i> Code
+        <FontAwesomeIcon icon={faGithub} className='projects_card-github-icon'/>
+         Code
       </a>
       <div className='projects_card-techs'>
         {

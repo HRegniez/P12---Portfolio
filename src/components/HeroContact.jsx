@@ -1,5 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import { ContactForm } from './ContactForm'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 const HeroContact = () => {
     const [contact, setContact] = useState(false)
@@ -36,7 +38,7 @@ const HeroContact = () => {
             ) : (
                 <div className='hero_contact-btn' onMouseUp={() => changeState()}>
                     <p>Contact</p>
-                    <i className="fa-solid fa-envelope"></i>                
+                    <FontAwesomeIcon icon={faEnvelope} className='hero_contact-icon'/>             
                 </div>
 
             )

@@ -1,6 +1,8 @@
 import React from 'react'
 import '../styles/components/footer.sass'
 import { ContactForm } from './ContactForm'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
   return (
@@ -20,7 +22,10 @@ const Footer = () => {
           </a>
         </article>
         
-        <a className='footer_github' target='_blanc' href='https://github.com/HRegniez'><i className="fa-brands fa-github"></i>   GitHub </a>
+        <a className='footer_github' target='_blanc' href='https://github.com/HRegniez'>
+          <FontAwesomeIcon icon={faGithub} className='footer_github-icon'/> 
+           GitHub
+        </a>
       </section>
     </footer>
   )
