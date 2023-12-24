@@ -23,12 +23,12 @@ export const ContactForm = () => {
 
     try {
       const res = await axios.post("https://api.emailjs.com/api/v1.0/email/send", data)
-      console.log(res.data)
+      window.alert('Message sent !')
       setName('')
       setEmail('')
       setMessage('')
     } catch (error) {
-      console.log(error)
+      window.alert('A probleme occured while sending the message, please try again !')
     }
   }
 
