@@ -17,55 +17,55 @@ function ProfileTechs() {
         <ul>
         <li>
             <div className='profile_techs-icon'>
-            <img src={iconVite} alt="" />
+            <img src={iconVite} alt="Vite icon" />
             </div>
             <h4>Vite</h4>
         </li>
         <li>
             <div className='profile_techs-icon'>
-            <img src={iconWebpack} alt="" />
+            <img src={iconWebpack} alt="Webpack icon" />
             </div>
             <h4>Webpack</h4>
         </li>
         <li>
             <div className='profile_techs-icon'>
-            <img src={iconSass} alt="" />
+            <img src={iconSass} alt="SASS icon" />
             </div>
             <h4>SASS/SCSS</h4>
         </li>
         <li>
             <div className='profile_techs-icon'>
-            <img src={iconTailwind} alt="" />
+            <img src={iconTailwind} alt="Tailwind icon" />
             </div>
             <h4>Tailwind</h4>
         </li>
         <li>
             <div className='profile_techs-icon'>
-            <img src={iconRedux} alt="" />
+            <img src={iconRedux} alt="Redux icon" />
             </div>
             <h4>Redux</h4>
         </li>
         <li>
             <div className='profile_techs-icon'>
-            <img src={iconGit} alt="" />
+            <img src={iconGit} alt="Git icon" />
             </div>
             <h4>Git</h4>
         </li>
         <li>
             <div className='profile_techs-icon'>
-            <img src={iconGithub} alt="" />
+            <img src={iconGithub} alt="Github icon" />
             </div>
             <h4>GitHub</h4>
         </li>
         <li>
             <div className='profile_techs-icon'>
-            <img src={iconSwagger} alt="" />
+            <img src={iconSwagger} alt="Swagger icon" />
             </div>
             <h4>Swagger</h4>
         </li>
         <li>
             <div className='profile_techs-icon'>
-            <img src={iconThree} alt="" />
+            <img src={iconThree} alt="Three js icon" />
             </div>
             <h4>THREE js</h4>
         </li>

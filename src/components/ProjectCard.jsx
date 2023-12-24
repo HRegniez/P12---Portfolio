@@ -9,7 +9,7 @@ function ProjectCard({id, title, imgLink, description, siteLink, githubLink, tec
     <div className='projects_card-contain'>
       <article className='projects_card' onMouseEnter={() => setDescritpionToggle(true)} onMouseLeave={() => setDescritpionToggle(false)}>
         <a className='projects_card-link' target="_blanc" href={siteLink}>
-              <img src={imgLink} alt="" />  
+              <img src={imgLink} alt={`Preview image of the ${title} website`} />  
         </a> 
 
         <div className={`projects_card-description ${descriptionToggle ? null : "closed"}`}>   

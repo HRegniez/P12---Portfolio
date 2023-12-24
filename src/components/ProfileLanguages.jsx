@@ -12,7 +12,7 @@ function ProfileLanguages() {
         <ul>
           <li>
             <div className='profile_languages-icon'>
-              <img src={iconHtml} alt="" />
+              <img src={iconHtml} alt="HTML icon" />
             </div>
             <h4>
               HTML
@@ -20,7 +20,7 @@ function ProfileLanguages() {
           </li>
           <li>
             <div className='profile_languages-icon'>
-              <img src={iconCss} alt="" />
+              <img src={iconCss} alt="CSS icon" />
             </div>
             <h4>
               CSS
@@ -28,7 +28,7 @@ function ProfileLanguages() {
           </li>
           <li>
             <div className='profile_languages-icon'>
-              <img src={iconJs} alt="" />
+              <img src={iconJs} alt="JS icon" />
             </div>
             <h4>
               JS
@@ -36,7 +36,7 @@ function ProfileLanguages() {
           </li>
           <li>
             <div className='profile_languages-icon'>
-              <img src={iconReact} alt="" />
+              <img src={iconReact} alt="React icon" />
             </div>
             <h4>
               REACT
