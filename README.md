@@ -1,6 +1,8 @@
 # My portfolio
 
-This project is my first web developer portfolio, coded with REACT and SASS using VITE. 
+This project is my first web developer portfolio, coded and designed by myself using REACT and SASS on VITE. 
+
+The paralax effect was hand-coded as an extra challenge.
 
 ## Table of contents
 
@@ -18,7 +20,6 @@ This project is my first web developer portfolio, coded with REACT and SASS usin
 
 - cross browser
 - multi-platform
-- 
 
 ### Screenshot
 
