@@ -1,16 +1,44 @@
-# React + Vite
+# My portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is my first web developer portfolio, coded and designed by myself using REACT and SASS on VITE. 
 
-Currently, two official plugins are available:
+The paralax effect was hand-coded as an extra challenge.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of contents
 
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-## BUGS
+## Overview
 
-- Hero :
-    background mouseover fx does not delay (see @./styles/components/hero.sass)
+### The challenge
 
-*** environment variables to secure gitub auth key ?
+- cross browser
+- multi-platform
+
+### Screenshot
+
+![](./screenshot/preview.png)
+
+### Links
+
+- Live Site URL: [hregniez.com](https://hregniez.com)
+
+## My process
+
+### Built with
+
+- REACT
+- JS
+- SASS
+- VITE
+- animate.css
+
+## Author
+
+- Website - [hregniez](hregniez.com)
