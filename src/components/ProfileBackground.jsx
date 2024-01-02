@@ -7,7 +7,7 @@ function ProfileBackground() {
         <ul>
           <li>
             <span>2013</span>
-            <h4>A-level (équivalent du BAC-S français)</h4>
+            <h4>A-level (Bac-S equivalent)</h4>
             <p>St Julians School - Newport, UK</p>
           </li>
           <li>
