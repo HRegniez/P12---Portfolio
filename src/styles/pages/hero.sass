@@ -52,7 +52,39 @@
         cursor: default
     &-space 
         margin-left: 0.4rem
+    &_linkedIn
+        position: absolute
+        bottom: 2rem
+        left: 50mvw
+        padding: 0.5rem 1rem
+        background-color: $surface-200
+        border-radius: 0.5rem
+        display: flex
+        gap: 0.5rem
+        opacity: 100%
+        animation: fadeIn 0.7s 4.5s backwards
+        z-index: 1  
+        &:hover
+            p
+                color: $primary-200
+                font-weight: 600
+                transition: color 0.3s ease
+            .hero_linkedIn-icon
+                color: $primary-200
+                transition: color 0.5s ease
 
+                
+        p
+            font-size: 1rem
+            color: $primary-700
+            font-weight: 400
+            transition: color 0.5s ease-out
+        &-icon
+            font-size: 1.5rem
+            vertical-align: middle
+            line-height: 19px
+            color: $primary-700
+            transition: color 0.6s ease-out
     &_github
         position: absolute
         bottom: 2rem
@@ -180,6 +212,13 @@
                 font-size: 3rem
         &_title
                 font-size: 6rem
+        &_linkedIn
+            padding: 0.7rem 1.5rem
+            p
+                font-size: 1.5rem
+            &-icon
+                font-size: 2rem
+                line-height: 29px
         &_github
             padding: 0.7rem 1.5rem
             p

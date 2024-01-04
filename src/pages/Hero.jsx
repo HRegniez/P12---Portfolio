@@ -3,7 +3,7 @@ import '../styles/pages/hero.sass'
 import AnimateLetters from '../components/AnimateLetters'
 import HeroContact from '../components/HeroContact'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faReact, faJsSquare, faCss3Alt, faHtml5, faSass } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faReact, faJsSquare, faCss3Alt, faHtml5, faSass } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -69,7 +69,12 @@ const Hero = () => {
             </p>
         </div>
 
-          <HeroContact />
+        <HeroContact />
+
+        <a href='https://www.linkedin.com/in/henri-regniez/' target='_blanc' className='hero_linkedIn'>
+          <FontAwesomeIcon icon={faLinkedin} className='hero_linkedIn-icon'/>
+          <p>LinkedIn</p>
+        </a>
               
         <a href='https://github.com/HRegniez' target='_blanc' className='hero_github'>
           <FontAwesomeIcon icon={faGithub} className='hero_github-icon'/>
