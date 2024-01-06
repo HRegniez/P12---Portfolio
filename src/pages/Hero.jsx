@@ -73,12 +73,12 @@ const Hero = () => {
 
         <a href='https://www.linkedin.com/in/henri-regniez/' target='_blanc' className='hero_linkedIn'>
           <FontAwesomeIcon icon={faLinkedin} className='hero_linkedIn-icon'/>
-          <p>LinkedIn</p>
+          <p className='desktop'>LinkedIn</p>
         </a>
               
         <a href='https://github.com/HRegniez' target='_blanc' className='hero_github'>
           <FontAwesomeIcon icon={faGithub} className='hero_github-icon'/>
-          <p>GitHub</p>
+          <p className='desktop'>GitHub</p>
         </a>
         <FontAwesomeIcon icon={faReact} className='logo _30 hero_react' style={{ transform: `translateY(${scrollPos * 0.3}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}} />
         <FontAwesomeIcon icon={faJsSquare} className='logo _37 hero_js' style={{ transform: `translateY(${scrollPos * 0.2}px)`, opacity:`${100 - (scrollPos * 0.15)}%`}} />

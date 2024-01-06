@@ -1,6 +1,8 @@
 @import '../settings.sass'
 @import 'animate.css'
 
+
+
 .text-animate
     opacity: 0
     animation: fadeIn 1s forwards
@@ -55,7 +57,7 @@
     &_linkedIn
         position: absolute
         bottom: 2rem
-        left: 50mvw
+        right: 6rem
         padding: 0.5rem 1rem
         background-color: $surface-200
         border-radius: 0.5rem
@@ -200,10 +202,13 @@
         opacity: 100%
         animation: bounceInUp 2s 4.5s backwards
 
-
+.desktop
+    display: none
             
 
 @media screen and (min-width: 768px)
+    .desktop
+        display: block
     .hero
         &_intro
             p
@@ -213,6 +218,7 @@
         &_title
                 font-size: 6rem
         &_linkedIn
+            right: 15rem
             padding: 0.7rem 1.5rem
             p
                 font-size: 1.5rem
