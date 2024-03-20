@@ -13,7 +13,7 @@
         "id": 2,
         "title": "Nina Carducci",
         "imgLink": "images/ninaCarducci.png",
-        "description": "Artist's Website where te task was to improve loading time and it's SEO",
+        "description": "Artist's Website where the task was to improve loading time and it's SEO",
         "siteLink": "https://hregniez.github.io/08_NinaCarducci/",
         "githubLink": "https://github.com/HRegniez/08_NinaCarducci/",
         "techs": ["HTML", "JS"]
