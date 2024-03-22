@@ -41,4 +41,4 @@ The paralax effect was hand-coded as an extra challenge.
 
 ## Author
 
-- Website - [hregniez](hregniez.com)
+- Website - [hregniez](https://hregniez.com)
