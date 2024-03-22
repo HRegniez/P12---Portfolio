@@ -1,14 +1,18 @@
 require('dotenv').config()
 
 const express = require('express')
+const projectsRoutes = require('./routes/projects')
 
-// express
+// express app
 const app = express()
 
-// Routes
-app.get('/', (req, res) => {
-    res.json({mssg: 'welcome to the app'})
+app.use((req, res, next) => {
+        console.log(req.path, req.method)
+        next()
 })
+
+// Routes
+app.use('/api/projects', projectsRoutes)
 
 // Listen for requests
 app.listen(process.env.PORT, () => {
