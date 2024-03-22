@@ -17,8 +17,8 @@ const Footer = () => {
           <p>
             This site was designed and hand-coded by myself using REACT.
           </p>
-          <a target='_blanc' href='https://github.com/HRegniez/P12---Portfolio'>
-            Link to code : https://github.com/HRegniez/P12---Portfolio
+          <a target='_blanc' href='https://github.com/HRegniez/P12---Portfolio/tree/master/front'>
+            Link to code
           </a>
         </article>
         
