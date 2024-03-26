@@ -9,6 +9,7 @@ function Projects() {
 
   useEffect(() =>{
     const fetchProjects = async () => {
+      // const response = await fetch('http://api.hregniez.com/api/projects')
       const response = await fetch('http://localhost:4000/api/projects')
       const json = await response.json()
 
