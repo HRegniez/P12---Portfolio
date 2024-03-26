@@ -12,13 +12,8 @@ const getLanguages = async (req, res) => {
     }
 }
 
-// const getTechs = async (req, res) => {
-//     const technos = await ProfileLanguages.find({}).sort({id: -1})
 
-//     res.status(200).json(technos)
-// }
 
 module.exports = {
     getLanguages
-    // getTechs
 }
