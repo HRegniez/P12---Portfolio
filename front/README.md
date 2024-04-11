@@ -2,7 +2,7 @@
 
 This ongoing project is my first web developer portfolio, coded and designed by myself using REACT and SASS on VITE. 
 
-The paralax effect was hand-coded as an extra challenge.
+The parallax effect was hand-coded as an extra challenge.
 
 ## Table of contents
 
